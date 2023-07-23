@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floors
   layers:
   - Default
   - TransparentFX
@@ -41,8 +42,11 @@ TagManager:
   - name: Background
     uniqueID: 428293515
     locked: 0
-  - name: FrontBackground
+  - name: Walls
     uniqueID: 2756911177
+    locked: 0
+  - name: Floors
+    uniqueID: 686525777
     locked: 0
   - name: Default
     uniqueID: 0
