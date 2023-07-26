@@ -13,23 +13,21 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private AudioClip jumpClip;
     [SerializeField] private AudioClip runingClip;
-    [SerializeField] private float speedRun = 3f;
-    [SerializeField] private float jumpForce = 3f;
     [SerializeField] private GameObject runParticleLeft;
     [SerializeField] private GameObject runParticleRight;
     [SerializeField] private GameObject jumpParticle;
     [SerializeField] private GameObject fallParticle;
 
-    private object[] paramCorutine = new object[1];
+    [SerializeField] private float speedRun = 3;
+    [SerializeField] private float jumpForce = 3;
+    [SerializeField] private float doubleJumpForce = 2.5f;
+
+    private bool canDoubleJump;
 
     private enum moveStates  { Idle, Run, Jump, Falling, Ground};
-    private bool isGrounded;
     private bool grondedPlay = false;
-    private bool alreadyPlayed = false;
     private float hDirection = 0f;
     private float vDirection = 0f;
-
-    private int jumpsCount = 1;
 
     void Start()
     {
@@ -48,15 +46,34 @@ public class PlayerController : MonoBehaviour
 
         rigidbody2D.velocity = new Vector2(hDirection * speedRun, rigidbody2D.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && (isGrounded || jumpsCount <= 2))
+        if (Input.GetButton("Jump"))
         {
-            jumpParticle.SetActive(true);
-            audioSource.PlayOneShot(jumpClip);
-            rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpForce);
-            jumpsCount++;
-            grondedPlay = true;
+            if (CheckIsGrounded.isGrounded)
+            {
+                jumpParticle.SetActive(true);
+                audioSource.PlayOneShot(jumpClip);
+                rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpForce);
+                grondedPlay = true;
+                canDoubleJump = true;
+            }
+            else
+            {
+                if (Input.GetButtonDown("Jump"))
+                {
+                    if (canDoubleJump)
+                    {
+                        audioSource.PlayOneShot(jumpClip);
+                        rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, doubleJumpForce);
+                        canDoubleJump = false;
+                    }
+                }
+            }
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            gameObject.GetComponent<DropBombs>().DropBomb(spriteRenderer.flipX);
+        }
 
         UpdateAnimation();
 
@@ -93,37 +110,20 @@ public class PlayerController : MonoBehaviour
             state = moveStates.Falling;
             jumpParticle.SetActive(false);
         }
-        else if (rigidbody2D.velocity.y == 0f && grondedPlay)
+        else if (rigidbody2D.velocity.y == 0f && CheckIsGrounded.isGrounded && grondedPlay)
         {
             state = moveStates.Ground;
-            grondedPlay = false;
             fallParticle.SetActive(true);
             StartCoroutine(HiddenParticleFall());
+            grondedPlay = false;
         }
 
         animator.SetInteger("State", ((int)state));
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Floors"))
-        {
-            isGrounded = true;
-            jumpsCount = 1;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Floors"))
-        {
-            isGrounded = false;
-        }
-    }
-
     private void ShowRunParticle(bool left, bool right)
     {
-        if (isGrounded)
+        if (CheckIsGrounded.isGrounded)
         {
             runParticleLeft.SetActive(left);
             runParticleRight.SetActive(right);

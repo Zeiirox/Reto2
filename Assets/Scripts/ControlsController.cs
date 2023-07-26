@@ -11,9 +11,9 @@ public class ControlsController : MonoBehaviour
     private bool panelIsActive = false;
     [SerializeField] private AudioSource backgoundSound;
     [SerializeField] private AudioSource forentSound;
-    [SerializeField] private Slider volumeSlide;
-    [SerializeField] private TextMeshProUGUI volumeLevel;
-    [SerializeField] private GameObject configurationsPanel;
+    [SerializeField] private Slider volumeSlide = null;
+    [SerializeField] private TextMeshProUGUI volumeLevel = null;
+    [SerializeField] private GameObject configurationsPanel = null;
 
     private void Start()
     {
@@ -28,10 +28,13 @@ public class ControlsController : MonoBehaviour
 
     private void LoadConfiguration()
     {
-        float volumeLevel = PlayerPrefs.GetFloat("Volume");
-        volumeSlide.value = volumeLevel;
-        this.volumeLevel.text = volumeLevel.ToString();
-        backgoundSound.volume = volumeLevel;
+        if (volumeSlide != null)
+        {
+            float volumeLevel = PlayerPrefs.GetFloat("Volume");
+            volumeSlide.value = volumeLevel;
+            this.volumeLevel.text = volumeLevel.ToString();
+            backgoundSound.volume = volumeLevel;
+        }
     }
 
     public void SaveConfiguration()
@@ -44,6 +47,20 @@ public class ControlsController : MonoBehaviour
 
     public void CloseAndOpenPanels(GameObject panel)
     {
+        panelIsActive = !panel.activeSelf;
+        panel.SetActive(panelIsActive);
+    }
+
+    public void Pause(GameObject panel)
+    {
+        Time.timeScale = 0;
+        panelIsActive = !panel.activeSelf;
+        panel.SetActive(panelIsActive);
+    }
+
+    public void Continue(GameObject panel)
+    {
+        Time.timeScale = 1;
         panelIsActive = !panel.activeSelf;
         panel.SetActive(panelIsActive);
     }
