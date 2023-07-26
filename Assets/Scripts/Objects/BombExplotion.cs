@@ -51,7 +51,7 @@ public class BombExplotion : MonoBehaviour
         rb2D.AddForce(direction * finalForce);
         if (collider.transform.CompareTag("Player"))
         {
-            animCollider.SetBool("Hit", true);
+            animCollider.Play("Hit");
         }
     }
 }
