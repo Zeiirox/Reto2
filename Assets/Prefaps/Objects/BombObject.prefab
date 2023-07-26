@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8642990543197722721}
   m_Layer: 0
   m_Name: Bomb
-  m_TagString: Untagged
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +123,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!95 &863040841386214691
 Animator:
@@ -159,8 +159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 863040841386214691}
   explotionRadius: 1.5
-  explotionForce: 1500
-  waitTimeToExploit: 5
+  explotionForce: 100
+  waitTimeToExploit: 1.9
   damage: 20
 --- !u!1 &4310842827886340084
 GameObject:

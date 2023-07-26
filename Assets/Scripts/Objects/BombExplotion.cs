@@ -7,45 +7,46 @@ public class BombExplotion : MonoBehaviour
     [SerializeField] private Animator animator;
 
     [SerializeField] private float explotionRadius = 2;
-    [SerializeField, Range(500, 1500)] private float explotionForce = 500;
-    [SerializeField] private float waitTimeToExploit = 0;
+    [SerializeField, Range(0, 500)] private float explotionForce = 100;
+    [SerializeField] private float waitTimeToExploit = 1.5f;
     [SerializeField] private int damage;
 
-
-    private float timeTrigger;
+    private float lifeTime;
 
     private void Start()
     {
-        timeTrigger = waitTimeToExploit;
+        lifeTime = waitTimeToExploit + 1f;
+        Destroy(gameObject, lifeTime);
     }
 
     private void Update()
     {
-        timeTrigger -= Time.deltaTime;
+        InitiateExplotion();
     }
+
+
     public void InitiateExplotion()
     {
-        //if (timeTrigger <= 0)
-        //{
-            animator.Play("BombOn");
-            Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, explotionRadius);
-            Debug.Log("Cuidado!!");
-            foreach (Collider2D collider in objects)
+        animator.Play("BombOn");
+        Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, explotionRadius);
+        foreach (Collider2D collider in objects)
+        {
+            Rigidbody2D rb2D = collider.GetComponent<Rigidbody2D>();
+            if (rb2D != null)
             {
-                Debug.Log(collider.tag);
-                Rigidbody2D rb2d = collider.GetComponent<Rigidbody2D>();
-                if (rb2d != null)
-                {
-                    Vector2 direction = collider.transform.position - transform.position;
-                    float distance = 1 + direction.magnitude;
-                    float finalForce = explotionForce / distance;
-                    rb2d.AddForce(direction * finalForce);
-                }
+                StartCoroutine(WaveExplotion(collider, rb2D));
             }
-            Destroy(gameObject);
-            timeTrigger = waitTimeToExploit;
-        //} 
+        }
 
+    }
+
+    IEnumerator WaveExplotion(Collider2D collider, Rigidbody2D rb2D)
+    {
+        yield return new WaitForSeconds(waitTimeToExploit);
+        Vector2 direction = collider.transform.position - transform.position;
+        float distance = 1 + direction.magnitude;
+        float finalForce = explotionForce;
+        rb2D.AddForce(direction * finalForce);
     }
 
     private void OnDrawGizmos()

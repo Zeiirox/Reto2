@@ -69,10 +69,10 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    gameObject.GetComponent<DropBombs>().DropBomb(spriteRenderer.flipX);
-        //}
+        if (Input.GetMouseButtonDown(0))
+        {
+            gameObject.GetComponent<DropBombs>().DropBomb(spriteRenderer.flipX);
+        }
 
         UpdateAnimation();
 

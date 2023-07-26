@@ -7,7 +7,7 @@ public class DropBombs : MonoBehaviour
     [SerializeField] private GameObject bombSpawLeft;
     [SerializeField] private GameObject bombSpawRight;
     [SerializeField] private GameObject bombPrefab;
-    //[SerializeField] private float timeToDestroyBomb = 2f;
+    [SerializeField] private float timeToDestroyBomb = 2f;
     [SerializeField] private float waitTime = 0;
 
     private float timeTrigger;
@@ -31,8 +31,7 @@ public class DropBombs : MonoBehaviour
             GameObject bombSpaw = flipX ? bombSpawRight : bombSpawLeft;
             GameObject bomb = Instantiate(bombPrefab, bombSpaw.transform.position, bombSpaw.transform.rotation);
             timeTrigger = waitTime;
-            //gameObject.GetComponent<BombExplotion>().InitiateExplotion();
+            Destroy(bomb, timeToDestroyBomb);
         }
-
     }
 }
