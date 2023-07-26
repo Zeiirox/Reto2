@@ -2031,6 +2031,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613472908}
   m_CullTransparentMesh: 1
+--- !u!1 &1741420333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3326666187506910962, guid: c11d438408fc3104bbfd32cefb979cee, type: 3}
+  m_PrefabInstance: {fileID: 3326666188412027352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1741420342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741420333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a888998721057324296de6cbde23d84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1830421455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5226,6 +5243,10 @@ PrefabInstance:
     - target: {fileID: 3326666187874897266, guid: c11d438408fc3104bbfd32cefb979cee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009313151330096253, guid: c11d438408fc3104bbfd32cefb979cee, type: 3}
+      propertyPath: timeToDestroyBomb
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c11d438408fc3104bbfd32cefb979cee, type: 3}

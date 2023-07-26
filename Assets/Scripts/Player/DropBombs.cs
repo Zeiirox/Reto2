@@ -28,7 +28,7 @@ public class DropBombs : MonoBehaviour
     {
         if (timeTrigger < 0)
         {
-            GameObject bombSpaw = flipX ? bombSpawRight : bombSpawLeft;
+            GameObject bombSpaw = flipX ? bombSpawLeft : bombSpawRight;
             GameObject bomb = Instantiate(bombPrefab, bombSpaw.transform.position, bombSpaw.transform.rotation);
             timeTrigger = waitTime;
             Destroy(bomb, timeToDestroyBomb);

@@ -15,43 +15,43 @@ public class BombExplotion : MonoBehaviour
 
     private void Start()
     {
-        lifeTime = waitTimeToExploit + 1f;
-        Destroy(gameObject, lifeTime);
+        //lifeTime = waitTimeToExploit + 1f;
+        //Destroy(gameObject.transform.parent, lifeTime);
     }
 
     private void Update()
     {
-        InitiateExplotion();
+        Invoke("InitiateExplotion", 1f);
     }
 
 
     public void InitiateExplotion()
     {
-        animator.Play("BombOn");
+        animator.SetBool("On", true);
         Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, explotionRadius);
         foreach (Collider2D collider in objects)
         {
             Rigidbody2D rb2D = collider.GetComponent<Rigidbody2D>();
             if (rb2D != null)
             {
-                StartCoroutine(WaveExplotion(collider, rb2D));
+                Animator animCollider = collider.GetComponent<Animator>();
+                StartCoroutine(WaveExplotion(collider, rb2D, animCollider));
             }
         }
 
     }
 
-    IEnumerator WaveExplotion(Collider2D collider, Rigidbody2D rb2D)
+    IEnumerator WaveExplotion(Collider2D collider, Rigidbody2D rb2D, Animator animCollider)
     {
         yield return new WaitForSeconds(waitTimeToExploit);
+        animator.SetBool("Explotion", true);
         Vector2 direction = collider.transform.position - transform.position;
         float distance = 1 + direction.magnitude;
-        float finalForce = explotionForce;
+        float finalForce = explotionForce / distance;
         rb2D.AddForce(direction * finalForce);
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, explotionRadius);
+        if (collider.transform.CompareTag("Player"))
+        {
+            animCollider.SetBool("Hit", true);
+        }
     }
 }
