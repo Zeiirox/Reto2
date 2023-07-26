@@ -11,13 +11,6 @@ public class BombExplotion : MonoBehaviour
     [SerializeField] private float waitTimeToExploit = 1.5f;
     [SerializeField] private int damage;
 
-    private float lifeTime;
-
-    private void Start()
-    {
-        //lifeTime = waitTimeToExploit + 1f;
-        //Destroy(gameObject.transform.parent, lifeTime);
-    }
 
     private void Update()
     {
