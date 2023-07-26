@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     private Animator animator;
     private SpriteRenderer spriteRenderer;
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D rb2D;
     private AudioSource audioSource;
 
 
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rb2D = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -44,15 +44,14 @@ public class PlayerController : MonoBehaviour
         hDirection = Input.GetAxis("Horizontal");
         vDirection = Input.GetAxis("Vertical");
 
-        rigidbody2D.velocity = new Vector2(hDirection * speedRun, rigidbody2D.velocity.y);
-
+        rb2D.velocity = new Vector2(hDirection * speedRun, rb2D.velocity.y);
         if (Input.GetButton("Jump"))
         {
             if (CheckIsGrounded.isGrounded)
             {
                 jumpParticle.SetActive(true);
                 audioSource.PlayOneShot(jumpClip);
-                rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpForce);
+                rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
                 grondedPlay = true;
                 canDoubleJump = true;
             }
@@ -63,17 +62,17 @@ public class PlayerController : MonoBehaviour
                     if (canDoubleJump)
                     {
                         audioSource.PlayOneShot(jumpClip);
-                        rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, doubleJumpForce);
+                        rb2D.velocity = new Vector2(rb2D.velocity.x, doubleJumpForce);
                         canDoubleJump = false;
                     }
                 }
             }
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            gameObject.GetComponent<DropBombs>().DropBomb(spriteRenderer.flipX);
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    gameObject.GetComponent<DropBombs>().DropBomb(spriteRenderer.flipX);
+        //}
 
         UpdateAnimation();
 
@@ -100,17 +99,17 @@ public class PlayerController : MonoBehaviour
             ShowRunParticle(false, false);
         }
 
-        if (rigidbody2D.velocity.y > 0.1f)
+        if (rb2D.velocity.y > 0.1f)
         {
             //audioSource.clip = clipJump;
             state = moveStates.Jump;
         }
-        else if (rigidbody2D.velocity.y < -0.1f)
+        else if (rb2D.velocity.y < -0.1f)
         {
             state = moveStates.Falling;
             jumpParticle.SetActive(false);
         }
-        else if (rigidbody2D.velocity.y == 0f && CheckIsGrounded.isGrounded && grondedPlay)
+        else if (rb2D.velocity.y == 0f && CheckIsGrounded.isGrounded && grondedPlay)
         {
             state = moveStates.Ground;
             fallParticle.SetActive(true);

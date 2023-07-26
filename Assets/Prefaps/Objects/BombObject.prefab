@@ -101,9 +101,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0017306319, y: -0.02040495}
+  m_Offset: {x: 0.016269166, y: -0.30875424}
   serializedVersion: 2
-  m_Radius: 0.21629971
+  m_Radius: 0.22114591
 --- !u!50 &4310842826803387366
 Rigidbody2D:
   serializedVersion: 4
@@ -123,7 +123,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!95 &863040841386214691
 Animator:
@@ -135,7 +135,7 @@ Animator:
   m_GameObject: {fileID: 4310842826803387360}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e6809534a0750142bc3a59ec8edfec8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -157,10 +157,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7342bfc843ce97f47a90f1e805747b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  explotionRadius: 2
-  explotionForce: 500
-  damage: 0
+  animator: {fileID: 863040841386214691}
+  explotionRadius: 1.5
+  explotionForce: 1500
+  waitTimeToExploit: 5
+  damage: 20
 --- !u!1 &4310842827886340084
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,16 +7,15 @@ public class DropBombs : MonoBehaviour
     [SerializeField] private GameObject bombSpawLeft;
     [SerializeField] private GameObject bombSpawRight;
     [SerializeField] private GameObject bombPrefab;
-    [SerializeField] private float timeToDestroyBomb = 2f;
+    //[SerializeField] private float timeToDestroyBomb = 2f;
     [SerializeField] private float waitTime = 0;
-
 
     private float timeTrigger;
     
     // Start is called before the first frame update
     void Start()
     {
-        timeTrigger = waitTime;
+        timeTrigger = 0;
     }
 
     // Update is called once per frame
@@ -31,8 +30,8 @@ public class DropBombs : MonoBehaviour
         {
             GameObject bombSpaw = flipX ? bombSpawRight : bombSpawLeft;
             GameObject bomb = Instantiate(bombPrefab, bombSpaw.transform.position, bombSpaw.transform.rotation);
-            Destroy(bomb, timeToDestroyBomb);
             timeTrigger = waitTime;
+            //gameObject.GetComponent<BombExplotion>().InitiateExplotion();
         }
 
     }
