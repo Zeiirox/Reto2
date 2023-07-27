@@ -124,7 +124,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!95 &863040841386214691
 Animator:
   serializedVersion: 4
@@ -158,11 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 863040841386214691}
-  liveAnimator: {fileID: 0}
   explotionRadius: 1.5
   explotionForce: 100
-  waitTimeToExploit: 1.9
-  damage: 20
 --- !u!1 &4310842827886340084
 GameObject:
   m_ObjectHideFlags: 0

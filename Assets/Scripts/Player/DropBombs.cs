@@ -10,15 +10,8 @@ public class DropBombs : MonoBehaviour
     [SerializeField] private float timeToDestroyBomb = 2f;
     [SerializeField] private float waitTime = 0;
 
-    private float timeTrigger;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        timeTrigger = 0;
-    }
+    private float timeTrigger = 0;
 
-    // Update is called once per frame
     void Update()
     {
         timeTrigger -= Time.deltaTime;

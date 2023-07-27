@@ -9,35 +9,37 @@ public class PlayerLives : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject[] lives;
 
-
     private int live = 3;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public bool ReduceLives()
     {
-        if (collision.gameObject.CompareTag("Bomb") || collision.gameObject.CompareTag("Enemy"))
+        live--;
+
+        if (live >= 0 && live <= lives.Length - 1)
         {
-            live--;
-
-            if (live >= 0 && live <= lives.Length - 1)
+            Animator liveAnimator = lives[live].GetComponent<Animator>();
+            liveAnimator.SetBool("LessLive", true);
+            animator.Play("Hit");
+            if (live == 0)
             {
-                Animator liveAnimator = lives[live].GetComponent<Animator>();
-                liveAnimator.SetBool("LessLive", true);
-                if (live == 0)
-                {
-                    animator.SetBool("Dead", true);
-                    Destroy(gameObject, 1f);
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
-
-                Invoke("hide", 1);
-
+                animator.SetBool("Dead", true);
+                Invoke("ReloadEscene", 2);
             }
-            
+
+            Invoke("hide", 1);
+
         }
+
+        return true;
     }
 
     private void hide()
     {
         lives[live].SetActive(false);
+    }
+
+    private void ReloadEscene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -61,7 +61,6 @@ public class PlayerController : MonoBehaviour
                 {
                     if (canDoubleJump)
                     {
-                        audioSource.PlayOneShot(jumpClip);
                         rb2D.velocity = new Vector2(rb2D.velocity.x, doubleJumpForce);
                         canDoubleJump = false;
                     }
