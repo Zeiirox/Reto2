@@ -20,7 +20,7 @@ public class PlayerDamage : MonoBehaviour
             collision.transform.Translate(Vector3.forward * finalForce * Time.deltaTime);
             if (!readyExecute)
             {
-                readyExecute = collision.gameObject.GetComponent<PlayerLives>().ReduceLives();
+                readyExecute = collision.transform.parent.GetComponent<PlayerLives>().ReduceLives();
             }
         }
     }

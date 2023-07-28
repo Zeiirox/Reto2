@@ -7,14 +7,19 @@ public class IABasicMove : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Transform[] wayPoints;
-    [SerializeField] private float speedMove;
-    [SerializeField] private float waitedPerPoint;
+    [SerializeField] private float speedMove = 0.5f;
+    [SerializeField] private float startWaitTime = 2;
     [SerializeField] private bool left;
 
     private Vector2 actualPosition;
 
-    private float waitedTrigger = 0;
+    private float waitedTrigger;
     private int i = 0;
+
+    private void Start()
+    {
+        waitedTrigger = startWaitTime;
+    }
 
     void Update()
     {
@@ -22,9 +27,9 @@ public class IABasicMove : MonoBehaviour
 
         if (Vector2.Distance(transform.position, wayPoints[i].transform.position) < 0.1f)
         {
+            StartCoroutine(CheckTurnAround());
             if (waitedTrigger <= 0)
             {
-                StartCoroutine(CheckTurnAround());
                 if (wayPoints[i] != wayPoints[wayPoints.Length - 1])
                 {
                     i++;
@@ -33,7 +38,7 @@ public class IABasicMove : MonoBehaviour
                 {
                     i = 0;
                 }
-                waitedTrigger = waitedPerPoint;
+                waitedTrigger = startWaitTime;
             }
             else
             {

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6909809256184790669}
   m_Layer: 0
-  m_Name: DoorObject
+  m_Name: DoorOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 6909809257188988053}
   - component: {fileID: 6909809257188988051}
   - component: {fileID: 6909809257188988052}
-  - component: {fileID: 6909809257188988050}
-  - component: {fileID: 6909809257188988049}
+  - component: {fileID: 3504862009305218276}
+  - component: {fileID: 2319919940716329268}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 686525777
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1d6e2b900b2732d4f959a13c76ee2753, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -129,7 +129,7 @@ Animator:
   m_GameObject: {fileID: 6909809257188988054}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1d957b4186833cc45be7bedfdf958ce1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6bb717ed19494c04f8436b3d1f6b6884, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -139,7 +139,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &6909809257188988050
+--- !u!61 &3504862009305218276
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +165,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.83717823, y: 1.3909795}
   m_EdgeRadius: 0
---- !u!114 &6909809257188988049
+--- !u!114 &2319919940716329268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

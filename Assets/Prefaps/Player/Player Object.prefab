@@ -153,7 +153,6 @@ GameObject:
   - component: {fileID: 3326666187506910953}
   - component: {fileID: 3326666187506910952}
   - component: {fileID: 5009313151330096253}
-  - component: {fileID: 531566332}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -426,23 +425,6 @@ MonoBehaviour:
   bombPrefab: {fileID: 4310842827886340084, guid: a0d6126945726b0438ca3123e237cc56, type: 3}
   timeToDestroyBomb: 4
   waitTime: 2
---- !u!114 &531566332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3326666187506910962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e54bd1897d76104089f0fc80f3c1a13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 3326666187506910963}
-  lives:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &3326666187874897265
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,9 +434,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3326666187874897266}
+  - component: {fileID: 3623664627710049826}
   m_Layer: 0
   m_Name: Player Object
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -475,6 +458,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3623664627710049826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3326666187874897265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e54bd1897d76104089f0fc80f3c1a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3326666187506910963}
+  lives:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &3326666188019261230
 GameObject:
   m_ObjectHideFlags: 0

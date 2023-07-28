@@ -53,6 +53,9 @@ TagManager:
   - name: Floors
     uniqueID: 686525777
     locked: 0
+  - name: ObjectsVarious
+    uniqueID: 1513216003
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

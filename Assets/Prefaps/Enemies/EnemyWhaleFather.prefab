@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 5432837322364626162}
   - component: {fileID: 5432837322364626163}
   - component: {fileID: 5432837322364626156}
-  - component: {fileID: 5432837322364626158}
   - component: {fileID: 5432837322364626159}
   m_Layer: 0
   m_Name: EnemyWhale
@@ -187,7 +186,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &5432837322364626156
 MonoBehaviour:
@@ -206,22 +205,9 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 5432837322251940641}
   - {fileID: 5432837323126457613}
-  speedMove: 1
-  waitedPerPoint: 3
+  speedMove: 0.5
+  startWaitTime: 4
   left: 0
---- !u!114 &5432837322364626158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5432837322364626166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182f02e21c8956246b6cf36814430c6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5432837322364626160}
 --- !u!114 &5432837322364626159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5432837322364626160}
+  timeToDestroy: 1
   jumpForce: 2.5
   lifes: 2
 --- !u!1 &5432837323062041414
@@ -349,9 +336,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5432837323525855253}
+  - component: {fileID: 560775229952712892}
   m_Layer: 0
   m_Name: EnemyWhaleFather
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -374,3 +362,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &560775229952712892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5432837323525855252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182f02e21c8956246b6cf36814430c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5432837322364626160}
+  live: 2
+  timeToDestroy: 1.5

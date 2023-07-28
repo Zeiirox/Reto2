@@ -9,9 +9,15 @@ public class DoorController : MonoBehaviour
     [SerializeField] private Animator doorAnim;
     [SerializeField] private string sceneName;
 
-    public bool enableDoor = false;
-
     private Animator playerAnim;
+
+    private bool enableDoor;
+    public bool EnableDoor 
+    {
+        get { return enableDoor; }
+        set { enableDoor = value; }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && enableDoor)
@@ -42,6 +48,14 @@ public class DoorController : MonoBehaviour
         if (enableDoor)
         {
             playerAnim.Play("DoorIn");
+        }
+    }
+
+    public void PlayAnimationOut()
+    {
+        if (enableDoor)
+        {
+            playerAnim.Play("DoorOut");
         }
     }
 

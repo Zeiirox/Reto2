@@ -6,6 +6,7 @@ public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] private Animator animator;
 
+    [SerializeField] private float timeToDestroy = 1;
     [SerializeField] private float jumpForce = 2.5f;
     [SerializeField] private int lifes = 2;
 
@@ -30,7 +31,7 @@ public class EnemyDamage : MonoBehaviour
         if (lifes == 0)
         {
             animator.SetBool("Dead", true);
-            Invoke("EnemyDie", 4f);
+            Invoke("EnemyDie", timeToDestroy);
         }
     }
 

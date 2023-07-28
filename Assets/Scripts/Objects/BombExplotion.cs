@@ -5,15 +5,18 @@ using UnityEngine;
 public class BombExplotion : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioSource explotion;
 
     [SerializeField] private float explotionRadius = 2;
     [SerializeField, Range(0, 500)] private float explotionForce = 100;
 
     private bool readyExecute;
+    private bool exploded;
 
     private void Start()
     {
         readyExecute = false;
+        exploded = false;
     }
 
     private void Update()
@@ -51,21 +54,19 @@ public class BombExplotion : MonoBehaviour
         {
             if (collider.CompareTag("Player"))
             {
-                readyExecute = collider.GetComponent<PlayerLives>().ReduceLives();
+                readyExecute = collider.transform.parent.GetComponent<PlayerLives>().ReduceLives();
             }
             else if (collider.CompareTag("Enemy"))
             {
-                readyExecute = collider.GetComponent<EnemyLives>().ReduceLives();
+                readyExecute = collider.transform.parent.GetComponent<EnemyLives>().ReduceLives();
             }
 
         }
-
+        if (!exploded)
+        {
+            explotion.Play();
+            exploded = true;
+        }
         Destroy(gameObject, 1.5f);
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position,explotionRadius);
     }
 }

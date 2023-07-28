@@ -8,7 +8,8 @@ public class EnemyLives : MonoBehaviour
 {
     [SerializeField] private Animator animator;
 
-    private int live = 2;
+    [SerializeField] private int live = 2;
+    [SerializeField] private float timeToDestroy = 2;
 
     public bool ReduceLives()
     {
@@ -17,7 +18,7 @@ public class EnemyLives : MonoBehaviour
         if (live == 0)
         {
             animator.SetBool("Dead", true);
-            Destroy(gameObject, 2);
+            Destroy(gameObject, timeToDestroy);
         }
 
         return true;
