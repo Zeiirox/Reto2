@@ -11,7 +11,7 @@ public class DoorController : MonoBehaviour
 
     private Animator playerAnim;
 
-    private bool enableDoor;
+    public bool enableDoor;
     public bool EnableDoor 
     {
         get { return enableDoor; }

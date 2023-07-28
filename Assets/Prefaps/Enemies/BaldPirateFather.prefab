@@ -221,9 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7674547506454587821}
-  timeToDestroy: 3
   jumpForce: 2.5
-  lifes: 2
 --- !u!1 &7674547506559440931
 GameObject:
   m_ObjectHideFlags: 0

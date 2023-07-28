@@ -65,6 +65,12 @@ public class ControlsController : MonoBehaviour
         panel.SetActive(panelIsActive);
     }
 
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+    }
+
     public void SetMute(bool toogle)
     {
         backgoundSound.mute = toogle;
