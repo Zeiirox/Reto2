@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - Bomb
   - Enemy
+  - Water
   layers:
   - Default
   - TransparentFX
@@ -58,4 +59,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Water
+    uniqueID: 2078658099
     locked: 0

@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float speedRun = 3;
     [SerializeField] private float jumpForce = 3;
+    [SerializeField] private bool enableDoubleJump = false;
     [SerializeField] private float doubleJumpForce = 2.5f;
 
     private bool canDoubleJump;
@@ -28,6 +29,19 @@ public class PlayerController : MonoBehaviour
     private bool grondedPlay = false;
     private float hDirection = 0f;
     private float vDirection = 0f;
+
+
+    public bool EnableDobleJump
+    {
+        set { enableDoubleJump = value; }
+        get { return enableDoubleJump; }
+    }
+
+    public float DoubleJumpForce
+    {
+        set { doubleJumpForce = value; }
+        get { return doubleJumpForce; }
+    }
 
     void Start()
     {
@@ -57,7 +71,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                if (Input.GetButtonDown("Jump"))
+                if (Input.GetButtonDown("Jump") && enableDoubleJump)
                 {
                     if (canDoubleJump)
                     {

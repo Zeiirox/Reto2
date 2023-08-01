@@ -12,10 +12,10 @@ public class DoorController : MonoBehaviour
     private Animator playerAnim;
 
     public bool enableDoor;
-    public bool EnableDoor 
+    public bool EnableDoor
     {
-        get { return enableDoor; }
         set { enableDoor = value; }
+        get { return enableDoor; }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

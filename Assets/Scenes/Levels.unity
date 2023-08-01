@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: Level3
       objectReference: {fileID: 0}
+    - target: {fileID: 9199719695341743139, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
+      propertyPath: sceneName
+      value: Level3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
 --- !u!1 &40073544
@@ -5144,6 +5148,10 @@ PrefabInstance:
       value: DoorLevel1
       objectReference: {fileID: 0}
     - target: {fileID: 6909809257188988049, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
+      propertyPath: sceneName
+      value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199719695341743139, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
       propertyPath: sceneName
       value: Level1
       objectReference: {fileID: 0}

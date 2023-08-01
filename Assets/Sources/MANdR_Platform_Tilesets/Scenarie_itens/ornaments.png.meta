@@ -110,7 +110,7 @@ TextureImporter:
         x: 32
         y: 544
         width: 32
-        height: 22
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: ornaments_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 544
-        width: 28
-        height: 25
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: ornaments_2
       rect:
         serializedVersion: 2
-        x: 162
+        x: 160
         y: 544
-        width: 29
-        height: 20
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: ornaments_3
       rect:
         serializedVersion: 2
-        x: 225
+        x: 224
         y: 544
-        width: 30
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: ornaments_4
       rect:
         serializedVersion: 2
-        x: 290
+        x: 288
         y: 544
-        width: 28
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,9 +213,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 489
-        width: 96
-        height: 23
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,10 +233,10 @@ TextureImporter:
       name: ornaments_6
       rect:
         serializedVersion: 2
-        x: 160
-        y: 489
+        x: 64
+        y: 480
         width: 32
-        height: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: ornaments_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 496
+        x: 96
+        y: 480
         width: 32
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,10 +275,10 @@ TextureImporter:
       name: ornaments_8
       rect:
         serializedVersion: 2
-        x: 288
-        y: 416
+        x: 160
+        y: 480
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,9 +296,9 @@ TextureImporter:
       name: ornaments_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 416
-        width: 96
+        x: 224
+        y: 480
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -317,8 +317,8 @@ TextureImporter:
       name: ornaments_10
       rect:
         serializedVersion: 2
-        x: 160
-        y: 416
+        x: 288
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -338,8 +338,8 @@ TextureImporter:
       name: ornaments_11
       rect:
         serializedVersion: 2
-        x: 224
-        y: 416
+        x: 288
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -360,9 +360,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 375
-        width: 64
-        height: 9
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,10 +380,10 @@ TextureImporter:
       name: ornaments_13
       rect:
         serializedVersion: 2
-        x: 128
-        y: 369
-        width: 64
-        height: 15
+        x: 64
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,10 +401,10 @@ TextureImporter:
       name: ornaments_14
       rect:
         serializedVersion: 2
-        x: 224
-        y: 375
+        x: 96
+        y: 416
         width: 32
-        height: 9
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,8 +422,8 @@ TextureImporter:
       name: ornaments_15
       rect:
         serializedVersion: 2
-        x: 288
-        y: 352
+        x: 160
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -443,10 +443,10 @@ TextureImporter:
       name: ornaments_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 313
-        width: 64
-        height: 7
+        x: 224
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,10 +464,10 @@ TextureImporter:
       name: ornaments_17
       rect:
         serializedVersion: 2
-        x: 128
-        y: 305
-        width: 64
-        height: 15
+        x: 288
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,8 +485,8 @@ TextureImporter:
       name: ornaments_18
       rect:
         serializedVersion: 2
-        x: 224
-        y: 288
+        x: 32
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -506,10 +506,10 @@ TextureImporter:
       name: ornaments_19
       rect:
         serializedVersion: 2
-        x: 33
-        y: 32
-        width: 158
-        height: 220
+        x: 64
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,8 +527,8 @@ TextureImporter:
       name: ornaments_20
       rect:
         serializedVersion: 2
-        x: 224
-        y: 160
+        x: 128
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -548,8 +548,8 @@ TextureImporter:
       name: ornaments_21
       rect:
         serializedVersion: 2
-        x: 288
-        y: 160
+        x: 160
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -570,9 +570,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 32
+        y: 352
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,9 +591,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 32
+        y: 352
         width: 32
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -603,6 +603,279 @@ TextureImporter:
       bones: []
       spriteID: fc95f77a373b8d148830774bd6745585
       internalID: -1422292811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8019c6dd657404045a495187f14bb7bb
+      internalID: 1633988920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294c289351ba2b1499cfc45f2f33a388
+      internalID: 1108288144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a16d21cd086060418d5c9e5a363eaa9
+      internalID: 1548270563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9c22561b26e8c44ac1f05cdb378ad1
+      internalID: -459577090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_28
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddefe5f316de97469e86e852eebc593
+      internalID: -1514662731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_38
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0afdbe5091f563419d5a1e62d5d7669
+      internalID: -740669075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fa81e1b9360b7409e324ba70490c9e
+      internalID: -1826470795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_50
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55b07e5364c6094fb571d83406e6ea4
+      internalID: 838454477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_51
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c70983d2c8b75408b2474385ea4c79
+      internalID: -415891460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac9e1d29a3a9f041b6d69f95136b33d
+      internalID: 1939935440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_58
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87726c6f192aadc46b333bbc25543713
+      internalID: 1129500469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_64
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b82b996e644b64d8ad247488ac3db5
+      internalID: -646622194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ornaments_65
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c663b2e8b104bdf4e91e2ea7b51b95c1
+      internalID: -759916742
       vertices: []
       indices: 
       edges: []
@@ -619,29 +892,71 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       ornaments_2: 75980706
+      ornaments_46: 54476160
+      ornaments_62: 1451498125
+      ornaments_63: -1408873509
       ornaments_14: 804554284
       ornaments_15: 1267673432
-      ornaments_6: -732604021
       ornaments_19: 831855381
       ornaments_1: -1068906907
-      ornaments_4: 2087568906
-      ornaments_9: -436504130
-      ornaments_11: 312339298
-      ornaments_13: -1392635446
+      ornaments_45: 1930952280
+      ornaments_65: -759916742
+      ornaments_32: 992327275
+      ornaments_33: -363108088
+      ornaments_35: -1966909906
+      ornaments_43: 60797638
       ornaments_7: 2074579978
-      ornaments_10: -816311517
+      ornaments_27: -459577090
       ornaments_17: -1495295292
+      ornaments_58: 1129500469
       ornaments_5: 654738670
-      ornaments_16: -2061850028
+      ornaments_48: 1692691814
+      ornaments_53: 501581185
       ornaments_3: 1235762062
       ornaments_22: -658833077
       ornaments_0: -363625120
       ornaments_8: -7728504
+      ornaments_61: -1974514538
+      ornaments_42: -377377007
+      ornaments_31: -290957507
+      ornaments_36: -1781407036
+      ornaments_41: 1474019479
+      ornaments_44: 1578455438
+      ornaments_49: 1207072994
+      ornaments_30: 567556327
+      ornaments_47: -1129413609
+      ornaments_38: -740669075
+      ornaments_34: 1726633900
+      ornaments_50: 838454477
+      ornaments_51: -415891460
+      ornaments_26: 1548270563
+      ornaments_55: 2111454324
+      ornaments_6: -732604021
+      ornaments_40: -391458549
+      ornaments_4: 2087568906
+      ornaments_9: -436504130
+      ornaments_52: 92365485
+      ornaments_11: 312339298
+      ornaments_13: -1392635446
+      ornaments_64: -646622194
+      ornaments_10: -816311517
+      ornaments_16: -2061850028
+      ornaments_57: 1939935440
+      ornaments_59: 215401110
       ornaments_18: -1144533494
+      ornaments_29: -1042658769
+      ornaments_54: -1987896908
+      ornaments_37: 374842701
+      ornaments_28: -1514662731
       ornaments_12: -1700050924
+      ornaments_60: -1111824832
       ornaments_20: 153073632
       ornaments_23: -1422292811
+      ornaments_24: 1633988920
+      ornaments_39: -1826470795
       ornaments_21: 312426392
+      ornaments_56: 1047133634
+      ornaments_25: 1108288144
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

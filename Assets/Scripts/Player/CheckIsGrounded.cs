@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckIsGrounded : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class CheckIsGrounded : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        if (collider.gameObject.CompareTag("Water"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); ;
+        }
         if (collider.gameObject.CompareTag("Floor"))
         {
             isGrounded = true;

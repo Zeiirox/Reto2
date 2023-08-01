@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 8318327303691278238}
   m_Layer: 0
   m_Name: Captain
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,8 +186,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 6
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &8318327303691278237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 8318327304017869037}
   m_Layer: 0
   m_Name: CaptainFather
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182f02e21c8956246b6cf36814430c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 8318327303691278232}
   live: 2
   timeToDestroy: 1.5
 --- !u!1 &8318327304378659704
