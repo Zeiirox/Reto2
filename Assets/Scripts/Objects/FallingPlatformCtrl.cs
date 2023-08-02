@@ -6,10 +6,17 @@ public class FallingPlatformCtrl : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D rb2D;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
     [SerializeField] private float timeToFall = 0.2f;
     [SerializeField] private float timeToDestroy = 0.2f;
 
-    private float waitTrigger;
+    private Vector2 initialPosition;
+
+    private void Start()
+    {
+        initialPosition = gameObject.transform.position;
+    }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -17,6 +24,7 @@ public class FallingPlatformCtrl : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             StartCoroutine("Fall");
+            Invoke("ReloadFallingPlatform", timeToDestroy);
         }
         
     }
@@ -25,7 +33,19 @@ public class FallingPlatformCtrl : MonoBehaviour
     {
         yield return new WaitForSeconds(timeToFall);
         rb2D.bodyType = RigidbodyType2D.Dynamic;
-        Destroy(gameObject, timeToDestroy);
+        //Invoke("DisableFallingPlatform", timeToDestroy);
+        //spriteRenderer.enabled = false;
     }
 
+    private void ReloadFallingPlatform()
+    {
+        gameObject.transform.position = initialPosition;
+        rb2D.bodyType = RigidbodyType2D.Kinematic;
+        //spriteRenderer.enabled = true;
+    }
+
+    private void DisableFallingPlatform()
+    {
+        spriteRenderer.enabled = false;
+    }
 }
