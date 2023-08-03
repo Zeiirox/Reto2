@@ -19792,7 +19792,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 6
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 39
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -20712,7 +20712,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 14
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -20722,7 +20722,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -23463,16 +23463,16 @@ Tilemap:
     m_Data: {fileID: -348173174, guid: 47702e3f9057298439447313034cac42, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 862176043, guid: 47702e3f9057298439447313034cac42, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -1240215332, guid: 47702e3f9057298439447313034cac42, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1661952689, guid: 47702e3f9057298439447313034cac42, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1580332931, guid: 47702e3f9057298439447313034cac42, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1584820255, guid: 47702e3f9057298439447313034cac42, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1393622010, guid: 47702e3f9057298439447313034cac42, type: 3}
+    m_Data: {fileID: -1661952689, guid: 47702e3f9057298439447313034cac42, type: 3}
   - m_RefCount: 60
     m_Data: {fileID: -818160221, guid: 47702e3f9057298439447313034cac42, type: 3}
   - m_RefCount: 10
@@ -23515,8 +23515,8 @@ Tilemap:
     m_Data: {fileID: -363625120, guid: a0dc92451adf164429b27676e1588213, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -436504130, guid: a0dc92451adf164429b27676e1588213, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1393622010, guid: 47702e3f9057298439447313034cac42, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1963247538, guid: 47702e3f9057298439447313034cac42, type: 3}
   - m_RefCount: 1
@@ -26997,6 +26997,7 @@ GameObject:
   - component: {fileID: 2121059837}
   - component: {fileID: 2121059836}
   - component: {fileID: 2121059839}
+  - component: {fileID: 2121059840}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27063,7 +27064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121059835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.0861635, y: -2.5064006, z: -10}
+  m_LocalPosition: {x: -7.094511, y: -2.5064006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27104,6 +27105,22 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2121059840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121059835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a33d9e95e64e3d46b21913e7c089731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorIn: {fileID: 0}
+  timeToDisableMessage: 0
+  panelMessage: {fileID: 8423387105051886168}
+  numberOfObjects: 0
 --- !u!1001 &2132603089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27582,6 +27599,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 417315820, guid: b4a1ced5055de03448aa6d9cd50b404a, type: 3}
+      propertyPath: m_text
+      value: "Objetivo: Sigue acabando con todos los enemigos que no permiten que
+        llegues al misterioso tesoro.\n\n !Ah\xA1 y recuerda, siempre que vayas a
+        la playa recoge las botellas y la basura que puedas, con esta peque\xF1a
+        acc\xEDon pones tu granito de arena para ayudar al medio ambiente y que los
+        mares no se contaminen por la basura.\n\nUsa la tecla F para apagar las velas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 417315820, guid: b4a1ced5055de03448aa6d9cd50b404a, type: 3}
+      propertyPath: m_fontSize
+      value: 33.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 417315820, guid: b4a1ced5055de03448aa6d9cd50b404a, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106646710, guid: b4a1ced5055de03448aa6d9cd50b404a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8423387103924296773, guid: b4a1ced5055de03448aa6d9cd50b404a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -27676,3 +27713,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4a1ced5055de03448aa6d9cd50b404a, type: 3}
+--- !u!1 &8423387105051886168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1106646710, guid: b4a1ced5055de03448aa6d9cd50b404a, type: 3}
+  m_PrefabInstance: {fileID: 8423387105051886167}
+  m_PrefabAsset: {fileID: 0}
