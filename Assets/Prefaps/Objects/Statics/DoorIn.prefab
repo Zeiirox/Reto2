@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6909809256184790669}
-  - component: {fileID: 6092435704759134356}
   m_Layer: 0
   m_Name: DoorIn
   m_TagString: Untagged
@@ -33,32 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &6092435704759134356
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6909809256184790670}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.15444565, y: -0.054510236}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.21875, y: 1.5}
-    newSize: {x: 1.21875, y: 1.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.83717823, y: 1.3909795}
-  m_EdgeRadius: 0
 --- !u!1 &6909809257188988054
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,7 +44,7 @@ GameObject:
   - component: {fileID: 6909809257188988051}
   - component: {fileID: 6909809257188988052}
   - component: {fileID: 2981555873144687884}
-  - component: {fileID: 9199719695341743139}
+  - component: {fileID: 1450874871}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -192,7 +165,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.83717823, y: 1.3909795}
   m_EdgeRadius: 0
---- !u!114 &9199719695341743139
+--- !u!114 &1450874871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,9 +174,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6909809257188988054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db57151207fd2024095241e0af20774e, type: 3}
+  m_Script: {fileID: 11500000, guid: b5fa331e457121f43aad90087e861542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnim: {fileID: 6909809257188988052}
+  messagePanel: {fileID: 0}
+  textMessage: {fileID: 0}
   sceneName: Level2
-  enableDoor: 1
+  enableDoor: 0

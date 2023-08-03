@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1508644318}
     m_Modifications:
+    - target: {fileID: 1450874871, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
+      propertyPath: sceneName
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450874871, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
+      propertyPath: enableDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6909809256184790669, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4050,6 +4058,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1508644318}
     m_Modifications:
+    - target: {fileID: 1450874871, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
+      propertyPath: enableDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6909809256184790669, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5099,6 +5111,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1508644318}
     m_Modifications:
+    - target: {fileID: 1450874871, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
+      propertyPath: sceneName
+      value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450874871, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
+      propertyPath: enableDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6909809256184790669, guid: b6fecbc998cf86440b1a6496ca46334e, type: 3}
       propertyPath: m_RootOrder
       value: 0

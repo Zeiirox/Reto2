@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Time.timeScale > 0)
         {
             gameObject.GetComponent<DropBombs>().DropBomb(spriteRenderer.flipX);
         }

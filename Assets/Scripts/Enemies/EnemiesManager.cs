@@ -6,18 +6,15 @@ public class EnemiesManager : MonoBehaviour
 {
 
     [SerializeField] private GameObject doorEnable;
-
-    private void Start()
-    {
-        doorEnable.GetComponent<DoorController>().EnableDoor = false;
-    }
+    public static bool allEnemiesDead = false;
 
     void Update()
     {
+        EnemiesManager.allEnemiesDead = false;
         int count = gameObject.transform.childCount;
         if (count == 0)
         {
-            doorEnable.GetComponent<DoorController>().EnableDoor = true;
+            EnemiesManager.allEnemiesDead = true;
         }
     }
 }
