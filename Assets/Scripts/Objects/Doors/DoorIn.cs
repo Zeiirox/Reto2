@@ -9,7 +9,7 @@ public class DoorIn : MonoBehaviour
 
     [SerializeField] private Animator doorAnim;
     [SerializeField] private GameObject messagePanel = null;
-    [SerializeField] private TextMeshProUGUI textMessage = null;
+    [SerializeField] private TextMeshProUGUI textMessage;
     [SerializeField] private string sceneName;
 
     private Animator playerAnim;

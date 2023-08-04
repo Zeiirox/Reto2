@@ -33,8 +33,11 @@ public class ObjectInteractionController : MonoBehaviour
                     {
                         childObject.enabled = false;
                     }
-                    obj = Instantiate(prefab, transform.position, transform.rotation);
-                    obj.transform.SetParent(gameObject.transform);
+                    if (prefab != null)
+                    {
+                        obj = Instantiate(prefab, transform.position, transform.rotation);
+                        obj.transform.SetParent(gameObject.transform);
+                    }
                     numberOfObjects++;
                 }
             }

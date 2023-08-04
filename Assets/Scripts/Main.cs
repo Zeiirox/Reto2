@@ -17,7 +17,6 @@ public class Main : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(SceneManager.GetActiveScene().name);
         switch (SceneManager.GetActiveScene().name)
         {
             case "Level1":
@@ -35,6 +34,7 @@ public class Main : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(ObjectInteractionController.numberOfObjects);
         if (ObjectInteractionController.numberOfObjects == numberOfObjects)
         {
             allObjectsCompleted = true;
