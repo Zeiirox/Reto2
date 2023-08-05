@@ -116,6 +116,8 @@ GameObject:
   - component: {fileID: 7495046217084405059}
   - component: {fileID: 7495046217084405056}
   - component: {fileID: 7495046217084405057}
+  - component: {fileID: 31800408650038244}
+  - component: {fileID: 3793861059037111300}
   m_Layer: 0
   m_Name: Candle 2
   m_TagString: Untagged
@@ -211,3 +213,44 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &31800408650038244
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7495046217084405062}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0047902465, y: -0.21770024}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.21875, y: 0.5}
+    newSize: {x: 0.21875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.52532494, y: 0.9354005}
+  m_EdgeRadius: 0
+--- !u!114 &3793861059037111300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7495046217084405062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd63cad56e9ae00429765aaed7a0ccec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6528216897427425656, guid: 639b75c5f488edd4f9353332159eeaa3, type: 3}
+  childObject: {fileID: 7495046216892796888}
+  enableInteraction: 1

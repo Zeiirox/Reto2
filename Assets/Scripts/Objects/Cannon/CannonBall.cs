@@ -8,6 +8,12 @@ public class CannonBall : MonoBehaviour
     [SerializeField] private float timeToDestroy = 2;
     [SerializeField] private float moveSpeed = 2;
 
+    public bool LaunghToRight
+    {
+        set { launghToRight = value; }
+        get { return launghToRight; }
+    }
+
     void Start()
     {
         Destroy(gameObject, timeToDestroy);

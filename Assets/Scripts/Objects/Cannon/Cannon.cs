@@ -9,6 +9,7 @@ public class Cannon : MonoBehaviour
     [SerializeField] private GameObject ballPrefab;
     [SerializeField] private Transform spawnPoint;
 
+    [SerializeField] private bool left = false;
     [SerializeField] private float waitedToStart = 2;
     private float waitedTrigger;
 
@@ -35,6 +36,7 @@ public class Cannon : MonoBehaviour
     private void LaunchBall()
     {
         GameObject ball = Instantiate(ballPrefab, spawnPoint.position, spawnPoint.rotation);
+        ball.GetComponent<CannonBall>().LaunghToRight = !left;
         animator.SetBool("Attack", false);
     }
 }
