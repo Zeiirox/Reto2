@@ -629,6 +629,10 @@ PrefabInstance:
       propertyPath: enableInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3821744538465687152, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+      propertyPath: childObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 336862133}
     - target: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -684,6 +688,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
   m_PrefabInstance: {fileID: 336862131}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &336862133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164684541642464880, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+  m_PrefabInstance: {fileID: 336862131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &358777902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5246190130117303134, guid: 517c43c7ff26dc441ac3747c7c0fcca2, type: 3}
@@ -700,6 +709,10 @@ PrefabInstance:
       propertyPath: enableInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3821744538465687152, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+      propertyPath: childObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 394000419}
     - target: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -761,6 +774,11 @@ PrefabInstance:
 --- !u!4 &394000418 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+  m_PrefabInstance: {fileID: 394000417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &394000419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164684541642464880, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
   m_PrefabInstance: {fileID: 394000417}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &440766492
@@ -4741,6 +4759,10 @@ PrefabInstance:
       propertyPath: enableInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3821744538465687152, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+      propertyPath: childObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1472786068}
     - target: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4802,6 +4824,11 @@ PrefabInstance:
 --- !u!4 &1472786067 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+  m_PrefabInstance: {fileID: 1472786066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1472786068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164684541642464880, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
   m_PrefabInstance: {fileID: 1472786066}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1475068745
@@ -5016,6 +5043,10 @@ PrefabInstance:
       propertyPath: enableInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3821744538465687152, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+      propertyPath: childObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1541228861}
     - target: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5077,6 +5108,11 @@ PrefabInstance:
 --- !u!4 &1541228860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+  m_PrefabInstance: {fileID: 1541228859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1541228861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164684541642464880, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
   m_PrefabInstance: {fileID: 1541228859}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1545498222 stripped
@@ -5493,6 +5529,10 @@ PrefabInstance:
       propertyPath: enableInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3793861059037111300, guid: a35cb35f1c784b849b317f09c32f34ca, type: 3}
+      propertyPath: childObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1821785605}
     - target: {fileID: 7495046217084405059, guid: a35cb35f1c784b849b317f09c32f34ca, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5546,6 +5586,11 @@ PrefabInstance:
 --- !u!4 &1821785604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7495046217084405059, guid: a35cb35f1c784b849b317f09c32f34ca, type: 3}
+  m_PrefabInstance: {fileID: 1821785603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1821785605 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7495046216892796895, guid: a35cb35f1c784b849b317f09c32f34ca, type: 3}
   m_PrefabInstance: {fileID: 1821785603}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1830421455
@@ -9058,6 +9103,10 @@ PrefabInstance:
       propertyPath: enableInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3821744538465687152, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+      propertyPath: childObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 2015511753}
     - target: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -9111,6 +9160,11 @@ PrefabInstance:
 --- !u!4 &2015511752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+  m_PrefabInstance: {fileID: 2015511751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2015511753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164684541642464880, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
   m_PrefabInstance: {fileID: 2015511751}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2095534733 stripped
@@ -9182,7 +9236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096837501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.512941, y: -2.19, z: -10}
+  m_LocalPosition: {x: 6.5113544, y: -2.19, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9320,7 +9374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121059835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.4814124, y: -2.1829472, z: -10}
+  m_LocalPosition: {x: 6.4737835, y: -2.1815953, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9693,6 +9747,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3326666187506910952, guid: c11d438408fc3104bbfd32cefb979cee, type: 3}
+      propertyPath: jumpForce
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3326666187874897265, guid: c11d438408fc3104bbfd32cefb979cee, type: 3}
       propertyPath: m_Name
       value: Player Object
@@ -9880,6 +9938,10 @@ PrefabInstance:
       propertyPath: enableInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3793861059037111300, guid: a35cb35f1c784b849b317f09c32f34ca, type: 3}
+      propertyPath: childObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 7495046217256095846}
     - target: {fileID: 7495046217084405059, guid: a35cb35f1c784b849b317f09c32f34ca, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9930,6 +9992,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a35cb35f1c784b849b317f09c32f34ca, type: 3}
+--- !u!1 &7495046217256095846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7495046216892796895, guid: a35cb35f1c784b849b317f09c32f34ca, type: 3}
+  m_PrefabInstance: {fileID: 7495046217256095845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7674547506477679806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10112,6 +10179,10 @@ PrefabInstance:
       propertyPath: enableInteraction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3821744538465687152, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+      propertyPath: childObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 8164684541920104471}
     - target: {fileID: 8164684542822238840, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10162,6 +10233,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+--- !u!1 &8164684541920104471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164684541642464880, guid: fbf0cbd7f0368ab4388eb8fad57ac692, type: 3}
+  m_PrefabInstance: {fileID: 8164684541920104470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8188740355737203250
 PrefabInstance:
   m_ObjectHideFlags: 0
