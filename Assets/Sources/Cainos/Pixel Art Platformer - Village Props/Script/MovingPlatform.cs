@@ -10,7 +10,7 @@ namespace Cainos.PixelArtPlatformer_VillageProps
 
     public class MovingPlatform : MonoBehaviour
     {
-        public float velocityInheritPercent = 0.8f;     
+        public float velocityInheritPercent = 0.2f;     
 
         private List<Transform> onPlatformObjects;
 
@@ -30,6 +30,7 @@ namespace Cainos.PixelArtPlatformer_VillageProps
 
             foreach (Transform t in onPlatformObjects)
             {
+                Debug.Log(t);
                 t.Translate(velocity * Time.fixedDeltaTime);
             }
         }
