@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectInteractionController : MonoBehaviour
 {
     [SerializeField] private GameObject prefab = null;
-    [SerializeField] private SpriteRenderer childObject = null;
+    [SerializeField] private GameObject[] childObject;
 
     [SerializeField] private bool enableInteraction = true;
 
@@ -22,16 +22,27 @@ public class ObjectInteractionController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && enableInteraction )
+        if (collision.gameObject.CompareTag("Player") && enableInteraction)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (spriteRenderer.enabled)
                 {
                     spriteRenderer.enabled = false;
-                    if (childObject != null)
+                    if (childObject.Length > 0)
                     {
-                        childObject.enabled = false;
+                        foreach (GameObject item in childObject)
+                        {
+                            SpriteRenderer sr = item.GetComponent<SpriteRenderer>();
+                            if (sr)
+                            {
+                                sr.enabled = false;
+                            }
+                            else
+                            {
+                                item.SetActive(false);
+                            }
+                        }
                     }
                     if (prefab != null)
                     {

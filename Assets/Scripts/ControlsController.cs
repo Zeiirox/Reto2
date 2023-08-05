@@ -83,6 +83,7 @@ public class ControlsController : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
     }
 
