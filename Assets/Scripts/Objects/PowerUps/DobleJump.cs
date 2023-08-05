@@ -7,7 +7,7 @@ public class DobleJump : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
 
     [SerializeField] private float timePowerUp = 2;
-    [SerializeField] private float doubleJumpForce = 2; 
+    [SerializeField] private float doubleJumpForce = 4; 
 
     private float actualDoubleJumpForce;
 
