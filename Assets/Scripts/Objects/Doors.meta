@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scripts/Objects/Doors.meta
-guid: 67339add6767aa84a8e759e94406fb8f
+<<<<<<<< HEAD:Assets/Sources/Cainos.meta
+guid: 8809fab3c263fb94285f3e2f89e4c4d5
 ========
-guid: 33a01e42851e7b346b31a05ded519448
->>>>>>>> JARR:Assets/Sources/Cainos.meta
+guid: 71728ce34a11ddc4199124d8f6463e8d
+>>>>>>>> main:Assets/Scripts/Objects/Doors.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Prefaps/Objects/Statics/CandleOff.prefab.meta
-guid: 182cb462bcf37d147aa218f1d6c1eb26
-PrefabImporter:
-========
+<<<<<<<< HEAD:Assets/Sources/WaterTexture.meta
 guid: 9dc36d2e9044d36468d3d6487eea68b8
 folderAsset: yes
 DefaultImporter:
->>>>>>>> JARR:Assets/Sources/WaterTexture.meta
+========
+guid: 639b75c5f488edd4f9353332159eeaa3
+PrefabImporter:
+>>>>>>>> main:Assets/Prefaps/Objects/Statics/CandleOff.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
