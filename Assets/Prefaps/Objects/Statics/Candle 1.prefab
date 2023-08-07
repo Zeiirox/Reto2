@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd63cad56e9ae00429765aaed7a0ccec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6528216897427425656, guid: 30f48f70afa30794ab5fd19a01b5c8c0, type: 3}
-  childObject: {fileID: 8164684541642464895}
+  prefab: {fileID: 6528216897427425656, guid: feb8f310f9ce6ea4f93112cfb22bc4ab, type: 3}
+  childObject:
+  - {fileID: 8164684541642464880}
   enableInteraction: 1
