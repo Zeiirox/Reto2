@@ -8,6 +8,7 @@ TagManager:
   - Bomb
   - Enemy
   - Water
+  - FinalTreasure
   layers:
   - Default
   - TransparentFX
